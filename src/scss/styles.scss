@@ -1,6 +1,23 @@
 // VARIABLES
 
 $basefont: Helvetica, Arial, sans-serif;
+$color-primary: #f08100;
+
+// MIXINS
+
+@mixin border($size, $color) {
+  border: $size solid $color;
+}
+
+@mixin cushion($padding, $margin) {
+  padding: $padding;
+  margin: $margin;
+}
+
+@mixin size($width, $height) {
+  width: $width;
+  height: $height;
+}
 
 body {
   font:
@@ -9,13 +26,15 @@ body {
     size: 18px;
   }
   height: 100vh;
-  background: linear-gradient(30deg, #b3cecd, #ecefe1);
+  background-image: url(../assets/img/bg-planets.jpg);
+  background-repeat: no-repeat;
+  background-size: auto;
 }
 
-h1, h2 {
+h1, h2, h3 {
   font-weight: normal;
   margin: 1rem 0 .5rem 0;
-  color: #242828;
+  color: $color-primary;
 }
 
 h1 {
@@ -29,7 +48,7 @@ h2 {
 p {
   font-size: 1rem;
   margin: .5rem 0 .5rem 0;
-  color: #333;
+  color: $color-primary;
   line-height: 140%;
 }
 
@@ -38,4 +57,24 @@ p {
   max-width: 1000px;
   min-width: 400px;
   margin: 2rem auto 1rem auto;
+}
+
+button, input {
+  font:
+  {
+    family: $basefont;
+    size: 1rem;
+  }
+}
+
+input {
+  @include cushion(.25rem .5rem, 0 2rem 0 0);
+
+}
+
+button {
+  @include cushion(.5rem 2rem, 0 2rem 0 0);
+  text-transform: uppercase;
+  letter-spacing: .1rem;
+  background: #f08100;
 }

@@ -1,20 +1,14 @@
-// import './css/styles.css'; // Should not need this if compiling sass
 import $ from 'jquery';
 import './scss/styles.scss';
+import { AgePlanet } from './js/galactic.js';
+import { AgePerson } from './js/galactic.js';
 
-// $(document).ready(function(){
-//   $("#adder").submit(function(event) {
-//     event.preventDefault();
-//     const num1 = parseInt($("#num1").val());
-//     const num2 = parseInt($("#num2").val());
-//     let result = addToTen(num1,num2);
-//     console.log(result);
-//     let answer = "";
-//     if (result === true) {
-//       answer = "";
-//     } else {
-//       answer = "do not ";
-//     }
-//     $(".result").html(`<p>${num1} and ${num2} ${answer}add up to 10.</p>`);
-//   });
-// });
+$(document).ready(function(){
+  $("#galactic-age").submit(function(event) {
+    event.preventDefault();
+    const birthdate = ($("#birthdate").val());
+    let age = AgePerson(birthdate);
+    let output = AgePlanet(age);
+    $(".result").html(`<p>${}</p>`);
+  });
+});
