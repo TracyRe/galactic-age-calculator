@@ -30,16 +30,30 @@ A calculator that will
 
 Specification | Input | Output
 ------------- | ----- | ------
-_spec_ | _input_ | _output_
+Take a person's age on Earth and return corresponding age for Mercury | 36 | 150
+Take a person's age on Earth and return corresponding age for Venus | 36 | 58.06
+Take a person's age on Earth and return corresponding age for Mars | 36 | 19.15
+Take a person's age on Earth and return corresponding age for Jupiter | 36 | 3.04
+Take a person's age on Earth and return remaining lifespan in years on Mercury | 36 | 179.17
+Take a person's age on Earth and return remaining lifespan in years on Venus | 36 | 69.35
+Take a person's age on Earth and return remaining lifespan in years on Mars | 36 | 22.87
+Take a person's age on Earth and return remaining lifespan in years on Jupiter | 36 | 3.63
+If person has exceeded life expectancy, number of years by which they have surpassed it, on Mercury | 90 | 45.83
+If person has exceeded life expectancy, number of years by which they have surpassed it, on Venus | 90 | 17.74
+If person has exceeded life expectancy, number of years by which they have surpassed it, on Mars | 90 | 5.85
+If person has exceeded life expectancy, number of years by which they have surpassed it, on Jupiter | 90 | 0.93
+
+#### Assumptions
+* Average lifespan: 79 years
 
 ### Stretch Goals
 * Create a UI
-* Keith Richards' age in dog years on Jupiter in 2073
+* Calculate Keith Richards' age in dog years on Jupiter in 2073
 
 ### Development Plan
-1. Configure environment with Jasmine & Karma _DONE_
+1. Configure environment with Karma & asmine _DONE_
 1. Draft README _DONE_
-1. Write specs
+1. Write specs _DONE_
 1. Write first test to fulfill first spec
 1. Write code for first test
 1. Falsify first test to avoid false positive
