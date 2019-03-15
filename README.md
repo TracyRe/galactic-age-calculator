@@ -30,19 +30,19 @@ A calculator that will
 
 Specification | Input | Output
 ------------- | ----- | ------
-Get person's age from birthdate | June 13 1962 | 56
-Take a person's age on Earth and return corresponding age for Mercury | 36 | 150
-Take a person's age on Earth and return corresponding age for Venus | 36 | 58.06
-Take a person's age on Earth and return corresponding age for Mars | 36 | 19.15
-Take a person's age on Earth and return corresponding age for Jupiter | 36 | 3.04
-Take a person's age on Earth and return remaining lifespan in years on Mercury | 36 | 179.17
-Take a person's age on Earth and return remaining lifespan in years on Venus | 36 | 69.35
-Take a person's age on Earth and return remaining lifespan in years on Mars | 36 | 22.87
-Take a person's age on Earth and return remaining lifespan in years on Jupiter | 36 | 3.63
-If person has exceeded life expectancy, return number of years by which they have surpassed it, on Mercury | 90 | 45.83
-If person has exceeded life expectancy, return number of years by which they have surpassed it, on Venus | 90 | 17.74
-If person has exceeded life expectancy, return number of years by which they have surpassed it, on Mars | 90 | 5.85
-If person has exceeded life expectancy, return number of years by which they have surpassed it, on Jupiter | 90 | 0.93
+Get person's age from birthdate | June 13 1982 | 36
+Take a person's age on Earth and return _corresponding age_ for **Mercury** | 36 | 150
+Take a person's age on Earth and return _corresponding age_ for **Venus** | 36 | 58
+Take a person's age on Earth and return _corresponding age_ for **Mars** | 36 | 19
+Take a person's age on Earth and return _corresponding age_ for **Jupiter** | 36 | 3
+Take a person's age on Earth and return _remaining lifespan_ in years on **Mercury** | 36 | 179
+Take a person's age on Earth and return _remaining lifespan_ in years on **Venus** | 36 | 69
+Take a person's age on Earth and return _remaining lifespan_ in years on **Mars** | 36 | 23
+Take a person's age on Earth and return _remaining lifespan_ in years on **Jupiter** | 36 | 4
+If person has exceeded life expectancy, return number of years by which they have _surpassed it,_ on **Mercury** | 90 | 46
+If person has exceeded life expectancy, return number of years by which they have _surpassed it,_ on **Venus** | 90 | 18
+If person has exceeded life expectancy, return number of years by which they have _surpassed it,_ on **Mars** | 90 | 6
+If person has exceeded life expectancy, return number of years by which they have _surpassed it,_ on **Jupiter** | 90 | 1
 
 #### Assumptions
 * Average lifespan: 79 years
