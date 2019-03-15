@@ -30,6 +30,7 @@ A calculator that will
 
 Specification | Input | Output
 ------------- | ----- | ------
+Get person's age from birthdate | June 13 1962 | 56
 Take a person's age on Earth and return corresponding age for Mercury | 36 | 150
 Take a person's age on Earth and return corresponding age for Venus | 36 | 58.06
 Take a person's age on Earth and return corresponding age for Mars | 36 | 19.15
@@ -51,13 +52,13 @@ If person has exceeded life expectancy, return number of years by which they hav
 * Calculate Keith Richards' age in dog years on Jupiter in 2073
 
 ### Development Plan
-1. Configure environment with Karma & asmine _DONE_
-1. Draft README _DONE_
-1. Write specs _DONE_
-1. Write first test to fulfill first spec
-1. Write code for first test
-1. Falsify first test to avoid false positive
-1. Confirm first test passes
+1. ~~Configure environment with Karma & Jasmine~~ _DONE_
+1. ~~Draft README~~ _DONE_
+1. ~~Write specs~~ _DONE_
+1. ~~Write first test to fulfill first spec~~ _DONE_
+1. ~~Write code for first test~~ _DONE_
+1. ~~Falsify first test to avoid false positive~~ _D0NE_
+1. ~~Confirm first test passes~~ _DONE_
 1. Repeat from 4 for each spec
 1. If time, create UI
 
