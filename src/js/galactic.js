@@ -94,30 +94,32 @@ export class AgePlanet {
 export class AgePerson {
   constructor(birthdate) {
   this.birthdate = birthdate;
-  this.now = Date.now();
-  this.yearMilliseconds = 3.154e+10;
   // determine age from birthdate
+
   }
   ageCalc() {
-    const sinceBirthday = Date.parse(this.birthdate);
-    const milliseconds = this.now - sinceBirthday;
-    const years = milliseconds / this.yearMilliseconds;
-    const age = years.toFixed(0);
-    return age;
+    const dob = new Date();
+    dob = this.birthdate;
+    console.log(dob);
+    const birthyear = dob.getFullYear();
+    console.log(birthyear);
+    const birthMonth = dob.getMonth();
+    const birthDay = dob.getDay();
+    const birthday = new Date(year, birthMonth, birthDay);
+    const thisBirthday = birthday.toDateString();
+    console.log(thisBirthday);
+    vconstaconstr thisBirthdayMilli = Date.parse(thisBirthday);
+    const today = new Date();
+    const year = today.getFullYear();
+    console.log(year);
+    const age = year - birthyear;
+    if (thisBirthdayMilli > today) {
+      // have you had your birthday yet? no? then subtract a year
+      return age - 1;
+    } else {
+      return age;
+    }
   };
 
 
-  /*
-
-  Date.parse() gets milliseconds since Jan 1 1970 00:00:00
-  Before that milliseconds is negative - could use Math.abs to get absolute number and add Date.now milliseconds
-
-  get birthdate
-  convert to milliseconds with Date.parse()
-  get dateNow in milliseconds
-  subtract dateNow from birthdateMilliseconds
-  convert milliseconds to year
-  round down
-
-  */
 }
