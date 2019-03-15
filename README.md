@@ -38,10 +38,10 @@ Take a person's age on Earth and return remaining lifespan in years on Mercury |
 Take a person's age on Earth and return remaining lifespan in years on Venus | 36 | 69.35
 Take a person's age on Earth and return remaining lifespan in years on Mars | 36 | 22.87
 Take a person's age on Earth and return remaining lifespan in years on Jupiter | 36 | 3.63
-If person has exceeded life expectancy, number of years by which they have surpassed it, on Mercury | 90 | 45.83
-If person has exceeded life expectancy, number of years by which they have surpassed it, on Venus | 90 | 17.74
-If person has exceeded life expectancy, number of years by which they have surpassed it, on Mars | 90 | 5.85
-If person has exceeded life expectancy, number of years by which they have surpassed it, on Jupiter | 90 | 0.93
+If person has exceeded life expectancy, return number of years by which they have surpassed it, on Mercury | 90 | 45.83
+If person has exceeded life expectancy, return number of years by which they have surpassed it, on Venus | 90 | 17.74
+If person has exceeded life expectancy, return number of years by which they have surpassed it, on Mars | 90 | 5.85
+If person has exceeded life expectancy, return number of years by which they have surpassed it, on Jupiter | 90 | 0.93
 
 #### Assumptions
 * Average lifespan: 79 years
