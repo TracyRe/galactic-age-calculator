@@ -1,25 +1,12 @@
 export class AgePlanet {
   constructor(age) {
     this.age = age;
-    // this.yearMilliseconds = 3.154e+10;
     this.factorMerc = .24;
     this.factorVenus = .62;
     this.factorMars = 1.88;
     this.factorJupiter = 11.86;
     this.lifespan = 79;
   }
-
-  // determine age from birthdate
-
-  /*
-get birthdate
-convert to milliseconds
-get dateNow in milliseconds
-subtract dateNow from birthdateMilliseconds
-convert milliseconds to year
-round down
-
-  */
 
   // calculate age on each planet
   ageMercury() {
@@ -101,4 +88,36 @@ round down
       return planetLifeRemaining;
     }
   }
+}
+
+
+export class AgePerson {
+  constructor(birthdate) {
+  this.birthdate = birthdate;
+  this.now = Date.now();
+  this.yearMilliseconds = 3.154e+10;
+  // determine age from birthdate
+  }
+  ageCalc() {
+    const sinceBirthday = Date.parse(this.birthdate);
+    const milliseconds = this.now - sinceBirthday;
+    const years = milliseconds / this.yearMilliseconds;
+    const age = years.toFixed(0);
+    return age;
+  };
+
+
+  /*
+
+  Date.parse() gets milliseconds since Jan 1 1970 00:00:00
+  Before that milliseconds is negative - could use Math.abs to get absolute number and add Date.now milliseconds
+
+  get birthdate
+  convert to milliseconds with Date.parse()
+  get dateNow in milliseconds
+  subtract dateNow from birthdateMilliseconds
+  convert milliseconds to year
+  round down
+
+  */
 }

@@ -1,4 +1,14 @@
 import { AgePlanet } from './../src/js/galactic.js';
+import { AgePerson } from './../src/js/galactic.js';
+
+// test for calculating persons age from birthdate
+describe('AgePerson', function(){
+  it('should return age in years from birthdate', function() {
+    const ageYears = new AgePerson('June 13, 1982')
+    expect (ageYears.ageCalc()).toEqual('36');
+  });
+});
+
 
 // tests for calculating age on each planet
 describe('AgePlanet', function() {
