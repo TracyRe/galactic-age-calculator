@@ -47,13 +47,13 @@ h2 {
 
 p {
   font-size: 1rem;
-  margin: .5rem 0 .5rem 0;
+  margin: 1rem 0 .5rem 0;
   color: $color-primary;
   line-height: 140%;
 }
 
 .container {
-  width: 80%;
+  width: 70%;
   max-width: 1000px;
   min-width: 400px;
   margin: 2rem auto 1rem auto;
@@ -69,12 +69,27 @@ button, input {
 
 input {
   @include cushion(.25rem .5rem, 0 2rem 0 0);
-
+  box-shadow: inset 2px 2px 8px #4d2e5f;
 }
 
 button {
   @include cushion(.5rem 2rem, 0 2rem 0 0);
   text-transform: uppercase;
   letter-spacing: .1rem;
+}
+
+button#submit {
   background: #f08100;
+  border-top: 1px solid #fdfcee;
+  border-right:  1px solid #cd451b;
+  border-bottom: 1px solid #760d1b; // #d53302;
+  border-left: 1px solid #f8cd86;
+}
+
+button#reset {
+  background: #a3bbc7;
+  border-top: 1px solid lighten(#a3bbc7, 10%);
+  border-right:  1px solid #53636f;
+  border-bottom: 1px solid #354750; // #d53302;
+  border-left: 1px solid (#a3bbc7, 20%);
 }
