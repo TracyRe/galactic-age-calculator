@@ -28,7 +28,8 @@ body {
   height: 100vh;
   background-image: url(../assets/img/bg-planets.jpg);
   background-repeat: no-repeat;
-  background-size: auto;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 h1, h2, h3 {
