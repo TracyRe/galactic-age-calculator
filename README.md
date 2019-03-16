@@ -61,7 +61,7 @@ If person has exceeded life expectancy, return number of years by which they hav
 1. ~~Confirm first test passes~~ _DONE_
 1. ~~Repeat from 4 for each spec~~ _DONE_
 1. ~~If time, create UI~~ _DONE_
-1. Create front end code to display results of back end code
+1. ~~Create front end code to display results of back end code~~ _DONE_
 
 ### Installation
 * Clone from https://github.com/TracyRe/galactic-age-calculator.git
@@ -77,6 +77,6 @@ If person has exceeded life expectancy, return number of years by which they hav
 * HTML styled with Sass
 
 ### License
-_license_
+[MIT](./LICENSE.txt)
 
 Copyright (c) 2019 Tracy Reith
