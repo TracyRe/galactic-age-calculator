@@ -108,7 +108,7 @@ export class AgePerson {
     const birthday = new Date(year, birthMonth, birthDay);
     const thisBirthday = birthday.toDateString();
     console.log(thisBirthday);
-    vconstaconstr thisBirthdayMilli = Date.parse(thisBirthday);
+    const thisBirthdayMilli = Date.parse(thisBirthday);
     const today = new Date();
     const year = today.getFullYear();
     console.log(year);
