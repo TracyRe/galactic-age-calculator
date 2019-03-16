@@ -51,6 +51,9 @@ p {
   margin: 1rem 0 .5rem 0;
   color: $color-primary;
   line-height: 140%;
+  :first {
+    margin-top: 0;
+  }
 }
 
 .container {
@@ -69,12 +72,12 @@ button, input {
 }
 
 input {
-  @include cushion(.25rem .5rem, 0 2rem 0 0);
+  @include cushion(.25rem .5rem, 0 2rem 1rem 0);
   box-shadow: inset 2px 2px 8px #4d2e5f;
 }
 
 button {
-  @include cushion(.5rem 2rem, 0 2rem 0 0);
+  @include cushion(.5rem 2rem, 0 2rem 1rem 0);
   text-transform: uppercase;
   letter-spacing: .1rem;
 }
@@ -93,4 +96,15 @@ button#reset {
   border-right:  1px solid #53636f;
   border-bottom: 1px solid #354750; // #d53302;
   border-left: 1px solid (#a3bbc7, 20%);
+}
+
+.result {
+  display: none;
+  @include cushion(.25rem 1rem 1rem 1rem, 2rem 0);
+  background: rgba(255, 255, 255, .55);
+  box-shadow: 0 0 40px #fff;
+  border-radius: 10px;
+  p {
+    color: #43142a;
+  }
 }

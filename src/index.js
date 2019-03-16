@@ -20,6 +20,7 @@ $(document).ready(function(){
     const outputLifeRemainingMars = ageOutput.lifeRemainingMars();
     const outputLifeRemainingJupiter = ageOutput.lifeRemainingJupiter();
 
+    $(".result").show();
     if (age >= 79) {
       $(".result").html(`<p>On <em>Mercury</em>, you are <strong>${outputAgeMercury}.</strong> Congratulations on living there <strong>${outputLifeRemainingMercury}</strong> years longer than most.</p>
       <p>On <em>Venus</em>, you are <strong>${outputAgeVenus}.</strong> You have lived <strong>${outputLifeRemainingVenus}</strong> more years than the average Venuvian transplant.</p>
@@ -37,6 +38,6 @@ $(document).ready(function(){
   $("#reset").click(function(event) {
     event.preventDefault();
     const birthdate = ($("#birthdate").val(""));
-    $(".result").html("");
+    $(".result").hide();
   });
 });
