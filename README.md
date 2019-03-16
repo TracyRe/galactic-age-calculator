@@ -59,8 +59,8 @@ If person has exceeded life expectancy, return number of years by which they hav
 1. ~~Write code for first test~~ _DONE_
 1. ~~Falsify first test to avoid false positive~~ _D0NE_
 1. ~~Confirm first test passes~~ _DONE_
-1. Repeat from 4 for each spec
-1. If time, create UI
+1. ~~Repeat from 4 for each spec~~ _DONE_
+1. ~~If time, create UI~~ _DONE_
 1. Create front end code to display results of back end code
 
 ### Installation
@@ -69,11 +69,12 @@ If person has exceeded life expectancy, return number of years by which they hav
 
 
 ### Known Bugs
-* Cannot get month, date, or year from birthdate - error is "getFullYear"/"getMonth"/"getDate" is not a function
+* None identified
 
 ### Technologies Used
-* Javascript
+* Javascript with jQuery
 * Tested with Karma and Jasmine
+* HTML styled with Sass
 
 ### License
 _license_

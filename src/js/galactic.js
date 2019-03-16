@@ -99,24 +99,14 @@ export class AgePerson {
   }
   ageCalc() {
     const today = new Date();
-    console.log(today);
-    console.log(typeof today)
     const currentYear = today.getFullYear();
-    console.log(currentYear);
-    let dob = new Date(this.birthdate);
-    console.log(dob);
-    console.log(typeof dob);
-    let birthYear = dob.getFullYear();
-    console.log(birthYear);
-    let birthMonth = dob.getMonth();
-    let birthDay = dob.getDay();
-    let birthday = new Date(currentYear, birthMonth, birthDay);
-    const thisBirthday = birthday.toDateString();
-    console.log(thisBirthday);
-    const thisBirthdayMilli = Date.parse(thisBirthday);
-    console.log(typeof thisBirthdayMilli);
+    const dob = new Date(this.birthdate);
+    const birthYear = dob.getFullYear();
+    const birthMonth = dob.getMonth();
+    const birthDay = dob.getDay();
+    const currentBirthday = new Date(currentYear, birthMonth, birthDay);
     const age = currentYear - birthYear;
-    if (thisBirthdayMilli > today) {
+    if (currentBirthday > today) {
       // have you had your birthday yet? no? then subtract a year
       return age - 1;
     } else {
