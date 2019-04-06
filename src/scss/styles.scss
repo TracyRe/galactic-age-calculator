@@ -19,6 +19,23 @@ $color-primary: #f08100;
   height: $height;
 }
 
+@mixin tabletmin600 {
+  @media screen and (min-width: 600px) {
+    @content;
+  }
+}
+@mixin tabletmin763 {
+  @media screen and (min-width: 763px) {
+    @content;
+  }
+}
+
+@mixin tablet-landscapemin900 {
+  @media screen and (min-width: 900px) {
+    @content;
+  }
+}
+
 body {
   font:
   {
@@ -34,17 +51,26 @@ body {
 
 h1, h2, h3 {
   font-weight: normal;
-  margin: 1rem 0 .5rem 0;
+  margin: .5rem 0 .5rem 0;
   color: $color-primary;
+  @include tabletmin600 {
+    margin: 1rem 0 .5rem 0;
+    }
 }
 
 h1 {
-  font-size: 3rem;
+  font-size: 2rem;
+  @include tabletmin600 {
+    font-size: 3rem;
+    }
 }
 
 h2 {
-  font-size: 2rem;
-}
+  font-size: 1.5rem;
+  @include tabletmin600 {
+    font-size: 2rem;
+    }
+  }
 
 p {
   font-size: 1rem;
@@ -57,10 +83,31 @@ p {
 }
 
 .container {
-  width: 70%;
-  max-width: 1000px;
-  min-width: 400px;
-  margin: 2rem auto 1rem auto;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  width: 95%;
+  margin: .5rem auto 1rem auto;
+  @include tabletmin600 {
+    width: 85%;
+  }
+  @include tablet-landscapemin900 {
+    flex-flow: column nowrap;
+    justify-content: center;
+    width: 75%;
+    max-width: 1000px;
+    margin: 2rem auto 1rem auto;
+  }
+}
+
+.form {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  @include tabletmin600 {
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+  }
 }
 
 button, input {
@@ -69,6 +116,7 @@ button, input {
     family: $basefont;
     size: 1rem;
   }
+  align-self: flex-start;
 }
 
 input {
@@ -77,7 +125,10 @@ input {
 }
 
 button {
-  @include cushion(.5rem 2rem, 0 2rem 1rem 0);
+  @include tabletmin763 {
+    @include cushion(.5rem 2rem, 0 2rem 1rem 0);
+  }
+  @include cushion(.5rem 1.25rem, 0 1.25rem 1rem 0);
   text-transform: uppercase;
   letter-spacing: .1rem;
 }
@@ -100,11 +151,14 @@ button#reset {
 
 .result {
   display: none;
-  @include cushion(.25rem 1rem 1rem 1rem, 2rem 0);
-  background: rgba(255, 255, 255, .55);
-  box-shadow: 0 0 40px #fff;
-  border-radius: 10px;
+  @include cushion(.25rem 1rem 1rem 1rem, 1rem 0);
+  background: rgba(255, 255, 255, .8);
+  box-shadow: 0 0 40px rgba(255, 255, 255, .8), 0 0 20px rgba(255, 255, 255, .7), 0 0 10px rgba(255, 255, 255, .6), 0 0 5px rgba(255, 255, 255, .5);
+  border-radius: 8px;
   p {
     color: #43142a;
+  }
+  @include tabletmin600 {
+    @include cushion(.25rem 1rem 1rem 1rem, 2rem 0);
   }
 }
