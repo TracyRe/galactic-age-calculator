@@ -64,6 +64,7 @@ If person has exceeded life expectancy, return number of years by which they hav
 1. ~~Create front end code to display results of back end code~~ _DONE_
 
 ### Installation
+* View at https://galactic-age-calculator.netlify.com/
 * Clone from https://github.com/TracyRe/galactic-age-calculator.git
 * Run `$ npm install`
 
