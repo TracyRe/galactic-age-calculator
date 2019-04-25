@@ -1,5 +1,7 @@
 # Galactic Age Calculator
 
+[![Netlify Status](https://api.netlify.com/api/v1/badges/137c2a45-423a-4f09-a390-efebebd8901d/deploy-status)](https://app.netlify.com/sites/galactic-age-calculator/deploys) Deployed at https://galactic-age-calculator.netlify.com
+
 #### Test Driven Development project for Epicodus
 
 _Published_ **Mar 15 2019**<br>
